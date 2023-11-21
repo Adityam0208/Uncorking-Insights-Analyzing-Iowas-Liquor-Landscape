@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>421D13F56F27DA5280898F737B872C9BB8F83C8C9262BE505</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * 
+from stg_iowa_liquor_products</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=PostgreSQL35W
+Query=select * 
+from stg_iowa_liq...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int32" />
+            <Field name="Item Number" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int32" />
+            <Field name="Category Name" size="36" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="V_WString" />
+            <Field name="Item Description" size="60" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="V_WString" />
+            <Field name="Vendor" size="3" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="WString" />
+            <Field name="Vendor Name" size="60" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="V_WString" />
+            <Field name="Bottle Volume (ml)" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Pack" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Inner Pack" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Age" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Proof" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="List Date" size="10" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="WString" />
+            <Field name="UPC" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int64" />
+            <Field name="SCC" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int64" />
+            <Field name="State Bottle Cost" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Double" />
+            <Field name="State Case Cost" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Double" />
+            <Field name="State Bottle Retail" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Double" />
+            <Field name="Report Date" size="10" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="WString" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="DateTime" />
+            <Field name="DI_WorkflowFileName" size="8190" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>421D13F56F27DA5280898F737B872C9BB8F83C8C9262BE505</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales."Category Name",
+	stg_iowa_liquor_sales."Category",
+	stg_iowa_liquor_sales."Pack",
+	stg_iowa_liquor_sales."Bottle Volume (ml)",
+	stg_iowa_liquor_sales."State Bottle Cost",
+	stg_iowa_liquor_sales."State Bottle Retail" 
+from stg_iowa_liquor_sales</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=PostgreSQL35W
+Query=select stg_iowa_liquor_sales...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category Name" size="36" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="V_WString" />
+            <Field name="Category" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Int32" />
+            <Field name="Pack" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Int16" />
+            <Field name="Bottle Volume (ml)" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Int32" />
+            <Field name="State Bottle Cost" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Double" />
+            <Field name="State Bottle Retail" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="246" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Category Name" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category Name" size="36" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="V_String" />
+            <Field name="Category" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Int32" />
+            <Field name="Pack" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Int16" />
+            <Field name="Bottle Volume (ml)" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Int32" />
+            <Field name="State Bottle Cost" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Double" />
+            <Field name="State Bottle Retail" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select stg_iowa_liquor_sales.&quot;Category Name&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Category&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Pack&quot;,&#xA;	stg_iowa_liquor_sales.&quot;Bottle Volume (ml)&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Cost&quot;,&#xA;	stg_iowa_liquor_sales.&quot;State Bottle Retail&quot; &#xA;from stg_iowa_liquor_sales" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="162" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Category Name" selected="True" />
+            <Field field="Item Description" selected="True" />
+            <Field field="Vendor" selected="True" />
+            <Field field="Vendor Name" selected="True" />
+            <Field field="List Date" selected="True" />
+            <Field field="Report Date" selected="True" />
+            <Field field="DI_WorkflowFileName" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int32" />
+            <Field name="Item Number" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int32" />
+            <Field name="Category Name" size="36" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="V_String" />
+            <Field name="Item Description" size="60" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="V_WString" />
+            <Field name="Vendor" size="3" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="String" />
+            <Field name="Vendor Name" size="60" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="V_String" />
+            <Field name="Bottle Volume (ml)" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Pack" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Inner Pack" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Age" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="Proof" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int16" />
+            <Field name="List Date" size="10" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="String" />
+            <Field name="UPC" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int64" />
+            <Field name="SCC" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Int64" />
+            <Field name="State Bottle Cost" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Double" />
+            <Field name="State Case Cost" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Double" />
+            <Field name="State Bottle Retail" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="Double" />
+            <Field name="Report Date" size="10" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="String" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="DateTime" />
+            <Field name="DI_WorkflowFileName" size="15" source="File: odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||select * &#xA;from stg_iowa_liquor_products" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Category_SK" selected="True" />
+            <SelectField field="Category Name" selected="True" />
+            <SelectField field="Category" selected="True" rename="Category_Number" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Vendor" selected="True" rename="Vendor_Number" />
+            <SelectField field="Vendor Name" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" rename="DI_JobID" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="438" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Vendor_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="534" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||dim_iowa_liquor_vendors</File>
+          <Passwords>421D13F56F27DA5280898F737B872C9BB8F83C8C9262BE505</Passwords>
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Overwrite</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=PostgreSQL35W
+Query=dim_iowa_liquor_vendors</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Category Name" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Category Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Category Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Category Name" selected="True" rename="Right_Category Name" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||dim_iowa_liquor_products_category</File>
+          <Passwords>421D13F56F27DA5280898F737B872C9BB8F83C8C9262BE505</Passwords>
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Overwrite</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=PostgreSQL35W
+Query=dim_iowa_liquor_products_cat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="678" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Category_SK" selected="True" />
+            <SelectField field="Category Name" selected="True" />
+            <SelectField field="Category_Number" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="342" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Category_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="150" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Category Name" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="762" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Category Name" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Item Number" selected="True" />
+            <SelectField field="Category Name" selected="True" />
+            <SelectField field="Item Description" selected="True" />
+            <SelectField field="Vendor" selected="True" />
+            <SelectField field="Bottle Volume (ml)" selected="True" />
+            <SelectField field="Pack" selected="True" />
+            <SelectField field="Inner Pack" selected="True" />
+            <SelectField field="Age" selected="True" />
+            <SelectField field="Proof" selected="True" />
+            <SelectField field="List Date" selected="True" />
+            <SelectField field="UPC" selected="True" />
+            <SelectField field="SCC" selected="True" />
+            <SelectField field="State Bottle Cost" selected="True" />
+            <SelectField field="State Case Cost" selected="True" />
+            <SelectField field="State Bottle Retail" selected="True" />
+            <SelectField field="Report Date" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Vendor_Number" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Vendor" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DI_CreateDate" selected="True" rename="Right_DI_CreateDate" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="750" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Category Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Category Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DI_CreateDate" selected="True" rename="Right_DI_CreateDate" input="Right_" />
+                <SelectField field="Right_Category Name" selected="True" rename="Right_Category Name" input="Right_" />
+                <SelectField field="Right_DI_WorkflowFileName" selected="True" rename="Right_DI_WorkflowFileName" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Item Number" selected="True" />
+            <SelectField field="Item Description" selected="True" />
+            <SelectField field="Category_SK" selected="True" />
+            <SelectField field="Vendor_SK" selected="True" />
+            <SelectField field="Bottle Volume (ml)" selected="True" />
+            <SelectField field="Pack" selected="True" />
+            <SelectField field="Inner Pack" selected="True" />
+            <SelectField field="Age" selected="True" />
+            <SelectField field="Proof" selected="True" />
+            <SelectField field="List Date" selected="True" />
+            <SelectField field="UPC" selected="True" />
+            <SelectField field="SCC" selected="True" />
+            <SelectField field="State Bottle Cost" selected="True" />
+            <SelectField field="State Case Cost" selected="True" />
+            <SelectField field="State Bottle Retail" selected="True" />
+            <SelectField field="Report Date" selected="True" />
+            <SelectField field="DI_JobID" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="Category Name" selected="False" />
+            <SelectField field="Category_Number" selected="False" />
+            <SelectField field="DI_WorkflowFileName" selected="False" />
+            <SelectField field="Vendor_Number" selected="False" />
+            <SelectField field="Vendor Name" selected="False" />
+            <SelectField field="Right_DI_CreateDate" selected="False" />
+            <SelectField field="Right_Category Name" selected="False" />
+            <SelectField field="Vendor" selected="False" />
+            <SelectField field="Right_DI_CreateDate2" selected="False" />
+            <SelectField field="Right_DI_WorkflowFileName" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="954" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Item_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1050" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=PostgreSQL35W;UID=postgres;PWD=__EncPwd1__|||dim_iowa_liquor_products</File>
+          <Passwords>421D13F56F27DA5280898F737B872C9BB8F83C8C9262BE505</Passwords>
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Overwrite</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=PostgreSQL35W
+Query=dim_iowa_liquor_products</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="366" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Vendor_Number" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="24" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="24" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Unique" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Unique" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Join" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dim iowa liquor_products_categories, vendors, products</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4a2b711d-41b1-4ffe-96e7-a84c8b416369" />
+      <Telemetry>
+        <PreviousWorkflowId value="d9d61305-e684-4e22-af47-73d575e73298" />
+        <OriginWorkflowId value="d9d61305-e684-4e22-af47-73d575e73298" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
